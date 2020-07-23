@@ -1,0 +1,24 @@
+build/default/production/main.o:  \
+main.c  \
+mcc_generated_files/system.h  \
+ mcc_generated_files/pin_manager.h  \
+mcc_generated_files/rtcc.h  \
+ mcc_generated_files/ext_int.h  \
+mcc_generated_files/tmr1.h  \
+ mcc_generated_files/mccp1_compare.h  \
+LCD_1.h  \
+lm35.h  \
+dht22.h  \
+memoria_i2c.h  \
+ mcc_generated_files/uart1.h  \
+adc.h  \
+alarme.h  \
+keypad.h  \
+RecebeSerial.h  \
+ event.h  \
+var.h  \
+stateMachine.h  \
+output.h  \
+relogio.h  \
+calendario.h  \
+ EnviaSerial.h 

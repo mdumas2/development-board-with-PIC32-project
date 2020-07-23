@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP F931C106KAAAJ6
+D Tantalum Capacitors - Solid SMD 16Volts 10uF 10% 1206 AEC-Q200
+K
+F http://datasheets.avx.com/F93-AJ6.pdf
+$ENDCMP
+#
+#End Doc Library

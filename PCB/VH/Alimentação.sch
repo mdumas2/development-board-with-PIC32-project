@@ -1,0 +1,282 @@
+EESchema Schematic File Version 4
+LIBS:projeto(2)-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L projeto(2)-rescue:Jack-DC-PBL_GuiKauMoc-cache J1
+U 1 1 5C842828
+P 1750 4000
+F 0 "J1" H 1828 4325 50  0000 C CNN
+F 1 "Jack-DC" H 1828 4234 50  0000 C CNN
+F 2 "Connectorss:JACK_ALIM" H 1800 3960 50  0001 C CNN
+F 3 "" H 1800 3960 50  0001 C CNN
+	1    1750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 5C842B64
+P 2650 3900
+F 0 "D1" H 2650 3684 50  0000 C CNN
+F 1 "D_Schottky" H 2650 3775 50  0000 C CNN
+F 2 "1N5819HW-7-F:SOD3716X145N" H 2650 3900 50  0001 C CNN
+F 3 "~" H 2650 3900 50  0001 C CNN
+	1    2650 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5C842BDC
+P 3200 4250
+F 0 "C1" H 3292 4296 50  0000 L CNN
+F 1 "100nF" H 3292 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3200 4250 50  0001 C CNN
+F 3 "~" H 3200 4250 50  0001 C CNN
+	1    3200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5C842C79
+P 6350 4250
+F 0 "C3" H 6442 4296 50  0000 L CNN
+F 1 "100nF" H 6442 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6350 4250 50  0001 C CNN
+F 3 "~" H 6350 4250 50  0001 C CNN
+	1    6350 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4100 2200 4100
+Wire Wire Line
+	2050 4000 2200 4000
+Wire Wire Line
+	2200 4000 2200 4100
+Connection ~ 2200 4100
+Wire Wire Line
+	2050 3900 2500 3900
+$Comp
+L Device:R_Small R1
+U 1 1 5C843B34
+P 8350 4050
+F 0 "R1" H 8409 4096 50  0000 L CNN
+F 1 "330" H 8409 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8350 4050 50  0001 C CNN
+F 3 "~" H 8350 4050 50  0001 C CNN
+	1    8350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5C843B93
+P 8350 4450
+F 0 "D2" V 8388 4333 50  0000 R CNN
+F 1 "LED" V 8297 4333 50  0000 R CNN
+F 2 "LTST-C150GKT:LEDC3216X120N" H 8350 4450 50  0001 C CNN
+F 3 "~" H 8350 4450 50  0001 C CNN
+	1    8350 4450
+	0    -1   -1   0   
+$EndComp
+Text HLabel 8950 3900 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	8350 3900 8350 3950
+Connection ~ 8350 3900
+Wire Wire Line
+	8350 3900 8950 3900
+Wire Wire Line
+	8350 4150 8350 4300
+Wire Wire Line
+	8350 4600 8350 4850
+Text HLabel 6050 3550 2    50   Input ~ 0
+5V
+Wire Wire Line
+	5850 3900 5850 3550
+Wire Wire Line
+	5850 3550 6050 3550
+$Comp
+L power:GND #PWR0116
+U 1 1 5C936559
+P 4050 4800
+F 0 "#PWR0116" H 4050 4550 50  0001 C CNN
+F 1 "GND" H 4055 4627 50  0000 C CNN
+F 2 "" H 4050 4800 50  0001 C CNN
+F 3 "" H 4050 4800 50  0001 C CNN
+	1    4050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5C93657F
+P 6950 4700
+F 0 "#PWR0117" H 6950 4450 50  0001 C CNN
+F 1 "GND" H 6955 4527 50  0000 C CNN
+F 2 "" H 6950 4700 50  0001 C CNN
+F 3 "" H 6950 4700 50  0001 C CNN
+	1    6950 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5C9374F5
+P 8350 4850
+F 0 "#PWR0118" H 8350 4600 50  0001 C CNN
+F 1 "GND" H 8355 4677 50  0000 C CNN
+F 2 "" H 8350 4850 50  0001 C CNN
+F 3 "" H 8350 4850 50  0001 C CNN
+	1    8350 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L projeto(2)-rescue:LD1117S33TR_SOT223-PBL_GuiKauMoc-rescue U2
+U 1 1 5C976DD0
+P 6950 3900
+F 0 "U2" H 6950 4142 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 6950 4051 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6950 4100 50  0001 C CNN
+F 3 "" H 7050 3650 50  0001 C CNN
+	1    6950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L projeto(2)-rescue:F931C106KAAAJ6-F931C106KAAAJ6 C2
+U 1 1 5C8EBB36
+P 5500 4000
+F 0 "C2" V 5704 4128 50  0000 L CNN
+F 1 "10uF" V 5795 4128 50  0000 L CNN
+F 2 "F931C106KAAAJ6:CAPPM3216X180N" H 5850 4050 50  0001 L CNN
+F 3 "http://datasheets.avx.com/F93-AJ6.pdf" H 5850 3950 50  0001 L CNN
+F 4 "Tantalum Capacitors - Solid SMD 16Volts 10uF 10% 1206 AEC-Q200" H 5850 3850 50  0001 L CNN "Description"
+F 5 "1.8" H 5850 3750 50  0001 L CNN "Height"
+F 6 "AVX" H 5850 3650 50  0001 L CNN "Manufacturer_Name"
+F 7 "F931C106KAAAJ6" H 5850 3550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "581-F931C106KAAAJ6" H 5850 3450 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=581-F931C106KAAAJ6" H 5850 3350 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 5850 3250 50  0001 L CNN "RS Part Number"
+F 11 "" H 5850 3150 50  0001 L CNN "RS Price/Stock"
+	1    5500 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L projeto(2)-rescue:F931C106KAAAJ6-F931C106KAAAJ6 C4
+U 1 1 5C8ECCAF
+P 7450 4000
+F 0 "C4" V 7654 4128 50  0000 L CNN
+F 1 "10uF" V 7745 4128 50  0000 L CNN
+F 2 "F931C106KAAAJ6:CAPPM3216X180N" H 7800 4050 50  0001 L CNN
+F 3 "http://datasheets.avx.com/F93-AJ6.pdf" H 7800 3950 50  0001 L CNN
+F 4 "Tantalum Capacitors - Solid SMD 16Volts 10uF 10% 1206 AEC-Q200" H 7800 3850 50  0001 L CNN "Description"
+F 5 "1.8" H 7800 3750 50  0001 L CNN "Height"
+F 6 "AVX" H 7800 3650 50  0001 L CNN "Manufacturer_Name"
+F 7 "F931C106KAAAJ6" H 7800 3550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "581-F931C106KAAAJ6" H 7800 3450 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=581-F931C106KAAAJ6" H 7800 3350 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 7800 3250 50  0001 L CNN "RS Part Number"
+F 11 "" H 7800 3150 50  0001 L CNN "RS Price/Stock"
+	1    7450 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7250 3900 7450 3900
+Connection ~ 7450 3900
+Wire Wire Line
+	7450 3900 8350 3900
+Wire Wire Line
+	5250 3900 5500 3900
+Connection ~ 5500 3900
+Wire Wire Line
+	5500 3900 5850 3900
+Wire Wire Line
+	6950 4200 6950 4600
+Wire Wire Line
+	6350 4600 6950 4600
+Connection ~ 6950 4600
+Wire Wire Line
+	6950 4600 6950 4700
+Wire Wire Line
+	7450 4600 6950 4600
+Wire Wire Line
+	5500 4000 5500 3900
+Wire Wire Line
+	5500 4600 5500 4500
+Wire Wire Line
+	7450 4000 7450 3900
+Wire Wire Line
+	7450 4600 7450 4500
+Wire Wire Line
+	5850 3900 6350 3900
+Wire Wire Line
+	6350 4600 6350 4350
+Wire Wire Line
+	6350 4150 6350 3900
+Connection ~ 6350 3900
+Wire Wire Line
+	6350 3900 6650 3900
+Wire Wire Line
+	3200 4600 3200 4350
+Wire Wire Line
+	3200 4150 3200 3900
+Wire Wire Line
+	3200 3900 3550 3900
+Wire Wire Line
+	2800 3900 3200 3900
+$Comp
+L power:GND #PWR0119
+U 1 1 5CF91E82
+P 2200 4400
+F 0 "#PWR0119" H 2200 4150 50  0001 C CNN
+F 1 "GND" H 2205 4227 50  0000 C CNN
+F 2 "" H 2200 4400 50  0001 C CNN
+F 3 "" H 2200 4400 50  0001 C CNN
+	1    2200 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4100 2200 4400
+$Comp
+L projeto(2)-rescue:LD1117DT50TR-LD1117DT50TR U1
+U 1 1 5CFBAFD1
+P 3550 3900
+AR Path="/5CFBAFD1" Ref="U1"  Part="1" 
+AR Path="/5C84260A/5CFBAFD1" Ref="U1"  Part="1" 
+F 0 "U1" H 4400 4165 50  0000 C CNN
+F 1 "LD1117DT50TR" H 4400 4074 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 5100 4000 50  0001 L CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00000544.pdf" H 5100 3900 50  0001 L CNN
+F 4 "LDO Regulator 5V 1.3A DPAK STMicroelectronics LD1117DT50TR, LDO Voltage Regulator, 1.3A, 5 V +/-1%, 3-Pin DPAK" H 5100 3800 50  0001 L CNN "Description"
+F 5 "2.4" H 5100 3700 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 5100 3600 50  0001 L CNN "Manufacturer_Name"
+F 7 "LD1117DT50TR" H 5100 3500 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-LD1117DT50-TR" H 5100 3400 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=511-LD1117DT50-TR" H 5100 3300 50  0001 L CNN "Mouser Price/Stock"
+F 10 "6869259" H 5100 3200 50  0001 L CNN "RS Part Number"
+F 11 "https://uk.rs-online.com/web/p/products/6869259" H 5100 3100 50  0001 L CNN "RS Price/Stock"
+F 12 "70390194" H 5100 3000 50  0001 L CNN "Allied_Number"
+F 13 "http://www.alliedelec.com/stmicroelectronics-ld1117dt50tr/70390194/" H 5100 2900 50  0001 L CNN "Allied Price/Stock"
+	1    3550 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4300 4050 4600
+Wire Wire Line
+	3200 4600 4050 4600
+Connection ~ 4050 4600
+Wire Wire Line
+	4050 4600 4050 4800
+Wire Wire Line
+	4050 4600 5500 4600
+Connection ~ 3200 3900
+Connection ~ 5850 3900
+$EndSCHEMATC

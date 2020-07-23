@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model PJ-002A-SMT
+#/615436/121112/2.37/4/4/Connector
+DEF PJ-002A-SMT J 0 30 Y Y 1 F N
+F0 "J" 850 300 50 H V L CNN
+F1 "PJ-002A-SMT" 850 200 50 H V L CNN
+F2 "PJ-002AH-SMT-TR" 850 100 50 H I L CNN
+F3 "http://www.cui.com/product/resource/digikeypdf/pj-002a-smt.pdf" 850 0 50 H I L CNN
+F4 "Power Barrel Connector Jack 2.00mm ID (0.079\"), 5.50mm OD (0.217\") Surface Moun" 850 -100 50 H I L CNN "Description"
+F5 "" 850 -200 50 H I L CNN "Height"
+F6 "CUI" 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "PJ-002A-SMT" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "" 850 -500 50 H I L CNN "Mouser Part Number"
+F9 "" 850 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 850 -700 50 H I L CNN "RS Part Number"
+F11 "" 850 -800 50 H I L CNN "RS Price/Stock"
+DRAW
+X 1_1 1 0 0 200 R 50 50 0 0 B
+X 2 3 0 -100 200 R 50 50 0 0 B
+X 1_2 2 1000 0 200 L 50 50 0 0 B
+X 3 4 1000 -100 200 L 50 50 0 0 B
+P 5 0 1 6 200 100 800 100 800 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
